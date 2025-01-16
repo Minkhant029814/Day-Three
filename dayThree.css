@@ -154,7 +154,7 @@ nav{
  }
  .card_item h5{
     color: var(--orange);
-    font-size: 20;
+    font-size: 20px;
  }
  .card_item p{
     color: var(--white);
@@ -162,13 +162,13 @@ nav{
  }
  .card_item:hover {
     background-color: var(--orange);
-    h4,h5,p{
-        color: black;
-
-    }
     transform: translateY(-15px);
+    
  }
-
+ .card_item:hover h4,.card_item:hover h5,.card_item:hover p{
+   color: black;
+}
+ 
  /* Footer */
  footer{
     background-color: var(--black);

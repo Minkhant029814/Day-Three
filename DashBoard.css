@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+
+:root{
+    --color:#212121;
+    --color2:#fff;
+    --color3:#ff9933;
+    --color4:#ddd;
+    --font_family:"Roboto",Serif;
+    --darkred:darkred;
+
+
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--color2);
+}
+aside{
+    position: fixed;
+    height: calc(100vh - 50px);
+}
+
+.navigation{
+   
+    /* background-color:gray; */
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.navigation h1{
+    color:var(--color3);
+    font-size: 24px;
+    font-family: var(--font_family);
+}
+.links a i{
+    margin-left: 25px;
+    /* font-family: var(--font_family); */
+}
+
+/* Main Section */
+.mainSection{
+    display: flex;
+   margin-top: 112px;
+    /* margin: 112px 0; */
+    gap: 0 20px;
+}
+
+.mainSection .sideBar{
+   width: 250px;
+    background-color:var(--color);
+    /* height: 150vh; */
+
+}
+.sideBar {
+    
+    display: flex;
+    flex-direction: column;
+
+}
+.unorderLists li a{
+    display: flex;
+    gap: 0 10px;
+    color: white;
+    text-decoration: none;
+   /* margin-left: 20px; */
+   font-family: var(--font_family);
+    
+}
+
+.unorderLists li{
+color: white;
+list-style: none;
+margin-top: 20px;
+
+}
+
+/* Form Layout */
+.section{
+    margin-left: 265px;
+}
+.section h3{
+    font-family: var(--font_family);
+    font-size: 18px;
+
+}
+.form_location{
+    
+     /* background-color: var(--orange); */
+        
+    
+        /* background-color: lightblue; */
+       margin-top: 50px ;
+       
+       border: 1px solid gray;
+       box-shadow: 0 0 10px rgba(0,0,0,0.2);
+     
+
+ }
+ .form_location >form{
+    /* background-color: var(--orange); */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+ }
+ #name,#email,#phone,#dob,#options
+{       margin-top: 20px;
+    border-radius: 5px;
+    width: 1200px;
+    height: 25px;
+}
+#textarea{
+    width: 1200px;
+    height: 45px;
+}
+ .form_location form label{
+    color: var(--white);
+   font-size: 20px;
+   font-family: var(--font_family);
+    
+    
+ }
+ .buttonLists{
+    margin-top: 10px;
+    display: flex;
+    width: 20%;
+   
+    gap: 0 10px;
+ }
+ .btn{
+
+    width: calc(100% / 2);
+    background-color: var(--color3);
+    padding: 10px;
+    color: var(--color2);
+    border-radius: 10px;
+    
+ }
+ /* Footer */
+ .footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--color4);
+    padding: 30px 15px;
+    margin-left: -20px;
+}
+.footer p{
+color: white;
+font-size: 16px;
+font-family: var(--font_family);
+
+}
+
+
+.footerLinks a{
+    margin-left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: var(--font_family);
+}
