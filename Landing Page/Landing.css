@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --mainHeader:100px;
+    --Lato:"Lato";
+    --linkfont:12px;
+    --Poppins:"Poppins";
+    --mainParaFont:18px;
+    --mediaHeder:35px;
+    --flowerHeader:50px;
+    --parafont:14px;
+    --letterspace:4.2px;
+    --lineHeight:25px;
+    --buttonColor:#325DFF;
+    --paraColor:#ffffff;
+
+}
+
+.navigation {
+    position: relative;
+
+
+
+}
+
+.Toppest {
+    width: 100%;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    background-color: var(--buttonColor);
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+
+}
+
+.image img {
+    width: 100%;
+}
+
+.links ul {
+    display: flex;
+    gap: 0 25px;
+    list-style: none;
+}
+
+.links ul li a {
+    color: var(--paraColor);
+    font-size: var(--linkfont);
+    font-family: var(--Poppins);
+    text-decoration: none;
+}
+#scrollUp{
+    display: none;
+    background-color:var(--paraColor);
+    font-size: var(--parafont);
+    padding: 10px;
+    columns: var(--buttonColor);
+}
+
+.navigation h1 {
+    /* color: var(--color); */
+    font-family: var(--Lato);
+    font-weight: bold;
+    
+    color: var(--paraColorr);
+}
+
+.paragraph {
+    left: 10%;
+    /* top: 500px; */
+    position: absolute;
+    top: 200px;
+
+
+    width:1164px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font_family);
+}
+
+.paragraph h2 {
+    font-family: var(--Lato);
+    font-size:var(--mainHeader);
+    font-weight: lighter;
+    color: var(--paraColor);
+}
+
+.paragraph p {
+    font-size: var(--mainParaFont);
+    font-family: var(--Poppins);
+    letter-spacing: 0.2px;
+    text-align: center;
+    line-height: 50px;
+    color: var(--paraColor);
+}
+
+.Links{
+    margin-top: 50px;
+    background-color: var(--buttonColor);
+    /* width: 10px; */
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.Links a {
+    font-size: var(--mainParaFont);
+    font-family: var(--Lato);
+    font-weight: bold;
+    color: var(--paraColor);
+    text-decoration: none;
+    letter-spacing: var(--letterspace);
+}
+
+.icon {
+    display: none;
+    color: var(--color);
+    font-size: 50px;
+}
+
+
+
+/* for Sectin Two */
+.section_two {
+    display: flex;
+    margin: 0;
+}
+
+.textPart,
+.paraLinks {
+    width: calc(100% / 2 - 20px);
+}
+.paraLinks{
+    margin-top: 50px;
+    background-color: var(--buttonColor);
+    /* width: 10px; */
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.paraLinks a{
+    font-size: var(--mainParaFont);
+    font-family: var(--Lato);
+    font-weight: bold;
+    color: var(--paraColor);
+    text-decoration: none;
+    letter-spacing: var(--letterspace);
+}
+
+.textPart {
+    padding: 0 0 0 35px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.textPart>h3 {
+    font-size: var(--flowerHeader);
+    font-family: var(--Lato);
+    font-weight: lighter;
+    line-height: 50px;
+    margin-bottom: 20px;
+
+}
+
+.textPart p {
+    font-family: var(--Poppins);
+    line-height: 25px;
+    
+    font-weight: lighter;
+    font-size: 16px;
+
+}
+
+/* for Section Three */
+.textBlock {
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.textBlock h3 {
+    font-size: 35px;
+    font-family: "Lato";
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.textBlock p {
+    font-size: 16px;
+    font-family: "Poppins";
+    letter-spacing: 0.2px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.item_block {
+
+    width: 70%;
+   
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 25px;
+    justify-content: space-between;
+}
+
+.box {
+    /* border: 0.5px solid black; */
+    width: calc(calc(100% / 3) - 20px);
+    box-shadow: 0 0 10px gray;
+    padding: 25px 40px;
+}
+
+.symbols {
+    background-color: var(--buttonColor);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+
+    margin: 10px auto;
+    border-radius: 50%;
+    color: var(--paraColor);
+}
+
+.symbols i {
+    font-size: 30px;
+    margin: auto;
+}
+
+.box h4 {
+    font-size: 18px;
+    font-family: "Lato";
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.box p {
+    text-align: center;
+    font-size: 16px;
+    
+    font-family: "Poppins";
+    font-weight: lighter;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+}
+
+/* For Section four  */
+.section_four {
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+
+.ImageBack {
+    width: 100%;
+    margin: auto;
+}
+
+.ImageBack>img {
+    width: 100%;
+}
+
+.caseStudies {
+    width: 50%;
+    position: absolute;
+    top: 300px;
+    left: 25%;
+    text-align: center;
+}
+
+.caseStudies h4 {
+    font-weight: lighter;
+    font-family: "Lato";
+    font-size: 35px;
+    color: #FFFFFF;
+    margin: 35px 0 25px 0;
+}
+
+.caseStudies p {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    font-family: "Poppins";
+    color: #ffffff;
+
+}
+
+.playbtn i {
+    font-size: 40px;
+}
+/* for popupBox */
+.PopupClose{
+    position: absolute;
+    left: 220px;
+    top:5px;
+}
+.PopupMain{
+    position: relative;
+    position: absolute;
+    padding: 25px;
+    top:130px;
+   display: none;
+    left: 700px;
+    background-color: linen;
+    box-shadow: 0 0 10px gray;
+}
+.PopupInner{
+   
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px 0;
+}
+.popup-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.popup-content #submit{
+    background-color: var(--buttonColor);
+    color: var(--paraColor);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: var(--parafont);
+}
+.popup-content #emailbox{
+    padding: 10px;
+    border-radius: 10px;
+}
+.popup-content #emailbox::placeholder{
+    color: rgb(77, 7, 7);
+    font-family: var(--Lato);
+}
+.PopupClose,.popup-footer,.playbtn,#scrollUp{
+    cursor: pointer;
+}
+
+/* for Section Five */
+
+.feature {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #e4e4e4; */
+    padding: 40px 0 30px 0;
+}
+
+.feature>p {
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.feature>h4 {
+    font-size: 35px;
+    font-family: "Lato";
+    margin-bottom: 20px;
+}
+
+.flowerDesign {
+    display: flex;
+
+}
+.text{
+    padding: 0 20px;
+    
+}
+
+
+.text>h3 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.text>p {
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.text,
+.imagePart {
+    width: calc(100% / 2);
+}
+
+.imagePart>img {
+    width: 100%;
+}
+footer {
+    background-color: var(--buttonColor);
+    color: var(--paraColor);
+    text-align: center;
+    padding: 25px 0;
+}
+/* Responsive  for Mobile Device */
+@media (min-width:320px)  and (max-width:480px) {
+   /* for first section */
+   .Toppest{
+    z-index: 2;
+   }
+     .image img{
+        height: 100vh;
+     }
+    .paragraph{
+        width: 350px;
+        
+        text-align: center;
+        position: absolute;
+        top: 120px;
+        margin: 0 auto;
+    }
+    
+    .paragraph p{
+        line-height: 20px;
+    }
+
+    /* for second section */
+
+    .section_two{
+        position: relative;
+    }
+    .textPart{
+        position: absolute;
+        top: 20px;
+        width: 80%;
+        left:10%;
+        /* align-items: center; */
+        background-color:var(--paraColor);
+        padding: 50px 15px;
+        text-align: center;
+        
+    }
+    .paraLinks{
+        width: 300px;
+        margin: 0 ;
+    }
+    .imagePart{
+        width: 100%;
+        height: 80vh;
+    }
+    .imagePart img{
+        
+        height: 80vh;
+    }
+    /* for Section three*/
+    .item_block{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+    }
+    /*for Section four  */
+    .ImageBack img{
+        width: 100%;
+        height: 50vh;
+    }
+    .caseStudies{
+        position: absolute;
+        top:10%;
+        width: 80%;
+        left: 10%;
+    }
+    /* for Section five */
+    .feature{
+        width: 100%;
+    }
+    .flowerDesign{
+        position: relative;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        left: 5%;
+        padding: 50px 15px;
+        background-color: var(--paraColor);
+        position: absolute;
+        top: 100px;
+    }
+    /* for popup box */
+    .PopupMain{
+        position: relative;
+        position: absolute;
+        padding: 25px;
+        top:130px;
+       
+        left: 80px;
+        background-color: linen;
+        box-shadow: 0 0 10px gray;
+    }
+}
+
+@media (max-width:992px) {
+
+    
+    .icon {
+        display: inline;
+       
+
+    }
+    
+    .links {
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+        background-color: rgb(186, 167, 167);
+
+    }
+    
+    
+
+    .links ul {
+        flex-direction: column;
+
+        padding: 15px;
+    }
+
+    .links ul li {
+        margin-top: 10px;
+        background-color: rgb(77, 7, 7);
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .links p{
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    #scrollUp{
+        display: block;
+    }
+  
+  
+    .Toppest {
+        width: 100%;
+        flex-direction: row;
+        padding: 10px 15px;
+        background-color: var(--buttonColor);
+       
+        /* justify-content: space-between; */
+    }
+    .Toppest h1{
+        font-family: "Dancing Script";
+        color: var(--paraColor);
+        font-weight: bold;
+    }
+    .icon i{
+
+        background-color: var(--paraColor);
+        padding: 10px;
+    }
+}
+/* Responsive for Tablet */
+@media (min-width:481px) and (max-width:768px) {
+    /* for first section */
+    .Toppest{
+        z-index: 3;
+    }
+    .image img{
+        height: 100vh;
+     }
+    .paragraph{
+        width: 80%;
+        
+        text-align: center;
+        position: absolute;
+        top: 120px;
+        left: 10%;
+    }
+    
+    .paragraph p{
+        line-height: 20px;
+    }
+
+    /* for second section */
+
+    .section_two{
+        position: relative;
+       
+    }
+    .textPart{
+        position: absolute;
+        top: 50px;
+        z-index: 1;
+        width: 80%;
+        left:10%;
+        align-items: center;
+        background-color:var(--paraColor);
+        padding: 50px 15px;
+        text-align: center;
+        
+    }
+    .paraLinks{
+        width: 300px;
+        margin: 0 ;
+    }
+    .imagePart{
+        width: 100%;
+        height: 80vh;
+    }
+    .imagePart img{
+        
+        height: 80vh;
+    }
+    /* for Section three*/
+    .item_block{
+        display: flex;
+        /* gap:  20px 25px; */
+        /* flex-direction: column; */
+    }
+    .box{
+        width: calc(calc(100%  / 2) - 15px);
+    }
+    /*for Section four  */
+    .ImageBack img{
+        width: 100%;
+        height: 50vh;
+    }
+    .caseStudies{
+        position: absolute;
+        top:10%;
+        width: 80%;
+        left: 10%;
+    }
+    /* for Section five */
+    .feature{
+        width: 100%;
+    }
+    .flowerDesign{
+        position: relative;
+        padding: 0 20px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        left: 10%;
+        padding: 50px 15px;
+        background-color: var(--paraColor);
+        position: absolute;
+        top: 40px;
+    }
+
+    .symbols{
+        width: 50%;
+        margin-left: 25%;
+    }
+    /* for Popup Box */
+    .PopupMain{
+        position: relative;
+        position: absolute;
+        padding: 25px;
+        top:130px;
+       
+        left: 250px;
+        background-color: linen;
+        box-shadow: 0 0 10px gray;
+    }
+
+    
+}
+
