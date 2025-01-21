@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../DayTwo"
+		},
+		{
+			"path": "../../DayTwo Homework"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Projects"
+		},
+		{
+			"path": "../../Day7"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Day-Three"
+	}
+}
