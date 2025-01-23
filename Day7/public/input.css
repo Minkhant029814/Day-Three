@@ -6,8 +6,19 @@
 @layer base {
 
 }
-@layer components{
-    .cmn-ttn{
-        @apply font-dancing text-center text-5xl pb-12 relative  after:content-[''] after:w-8 after:h-2 after:bg-red-600 after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0;
+@layer components {
+    .cmn {
+        @apply font-dancing text-5xl uppercase text-center relative after:content-[''] after:w-36 after:h-2 after:bg-red-500 after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2 pb-5
+
+    }
+    .design{
+        @apply p-4 text-black bg-blue-50  font-bold;
+    }
+    .headingHover{
+        @apply text-yellow-400 p-2 leading-3;
+    }
+    .color{
+        @apply group-hover:bg-green-500;
     }
 }
+

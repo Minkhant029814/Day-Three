@@ -6,116 +6,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/0d274ee1bf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="bg-yellow-400">
-        <nav class="container">
-            <ul class="flex justify-between items-center">
-                <li class="w-1/3 text-center border-white border-l border-r py-4 relative group"><a href="#"
-                        class="text-white hover:text-black block">Number Card Section</a>
-                    <ul class="absolute bg-yellow-400 w-full hidden group-hover:block">
-                        <li class="py-5 border-red-600 border"><a href="#">Number Link1</a></li>
-                        <li class="py-5 border-red-900 border"><a href="#">Number Link2</a></li>
-                        <li class="py-5"><a href="#">Number Link3</a></li>
+    <header class="bg-yellow-500">
+        <nav class="container p-3">
+            <ul class="text-white w-full hidden sm:flex  bg-yellow-500 menu">
+                <li class="sm:w-1/3 w-full text-center hover:text-black relative group md:w-1/3 lg:w-1/3 xl:w-1/3 2xl:w-1/3">
+                    <a href="">Card Section</a>
+                    <ul class="w-full absolute bottom-0 left-0 top-10 hidden group-hover:block">
+                        <li class="border-white border-b p-2 bg-yellow-500"><a href="">Card link 1</a></li>
+                        <li class="border-white border-b p-2 bg-yellow-500"><a href="">Card link2</a></li>
+                        <li class="border-white border-b p-2 bg-yellow-500"><a href="">Card link3</a></li>
                     </ul>
                 </li>
-                <li class="w-1/3 text-center border-white py-4 relative group"><a href="#" class="text-white hover:text-black block">Card Section</a>
-                    <ul class="absolute bg-yellow-400 w-full hidden group-hover:block">
-                        <li class="py-5 border-red-600 border"><a href="#">Card Section 1</a></li>
-                        <li class="py-5 border-red-900 border"><a href="#">Card Sectuin 2</a></li>
-                        <li class="py-5"><a href="#"></a>Card Section 3</li>
-
+                <li class="sm:w-1/3 w-full text-center hover:text-black block border-white border-r border-l relative group md:w-1/3 lg:w-1/3 xl:w-1/3 2xl:w-1/3">
+                    <a href="">Number Card Section</a>
+                    <ul class="w-full absolute bottom-0 left-0 top-10 hidden group-hover:block">
+                        <li class="border-white border-b p-2 bg-yellow-500"><a href="#">NumberCard 1</a></li>
+                        <li class="border-white border-b p-2 bg-yellow-500"><a href="#">NumberCard2</a></li>
+                        <li class="border-white border-b p-2 bg-yellow-500"><a href="#">NumberCard3</a></li>
                     </ul>
-
                 </li>
-                <li class="w-1/3 text-center border-white py-4 relative group"><a href="#"
-                        class="text-white hover:text-black block">FAQ Section</a>
-                    <ul class="absolute bg-yellow-400 w-full hidden group-hover:block">
-                        <li class="py-5 border-red-600 border"><a href="#">FAQ Link1</a></li>
-                        <li class="py-5 border-red-900 border"><a href="#">FAQ Link2</a></li>
-                        <li class="py-5"><a href="#">FAQ Link3</a></li>
+                <li class="sm:w-1/3 w-full text-center hover:text-black group relative md:w-1/3 lg:w-1/3 xl:w-1/3 2xl:w-1/3"><a href="">FAQ Section</a>
+                    <ul class="w-full absolute bottom-0 left-0 top-10 hidden group-hover:block">
+                        <li class="border-white border-b p-2 bg-yellow-500"><a href="#">FAQ3</a></li>
+                        <li class="border-white border-b p-2 bg-yellow-500"><a href="#">FAQ2</a></li>
+                        <li class="border-white border-b p-2 bg-yellow-500"><a href="#">FAQ3</a></li>
                     </ul>
                 </li>
             </ul>
+            <div class="menu-bar block sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden" id="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <script>
+                const receiver = document.getElementsByClassName("menu-bar")[0];
+                const navigation = document.getElementsByClassName("menu")[0];
+                let isMenuOpen = false;
+        
+                receiver.addEventListener("click", () => {
+                    if (!isMenuOpen) {
+                        navigation.style.display = "block";
+                        isMenuOpen = true;
+                    } else {
+                        navigation.style.display = "none";
+                        isMenuOpen = false;
+                    }
+                })
+            </script>
         </nav>
-
     </header>
     <main>
-        <section class="py-12">
-            <div class="container">
-                <h1 class="cmn-ttn">Card <span class="text-gray-600">Section</span> </h1>
-
-                <div class="  grid grid-cols-3 gap-10 mt-10">
-                    <div class="cardBox group">
-                        <div class="cardImg">
-                            <img src="./assets/Imgaes/background_img.jpg" alt="photo"
-                                class="w-full transition duration-300 transform group-hover:scale-110">
-                        </div>
-                        <div class="cardText bg-green-950 mt-20 group-hover:p-5">
-                            <h2 class="text-white text-center">Title</h2>
-                            <p class="text-white text-center group-hover:text-yellow-400 transition duration-300">Lorem
-                                ipsum dolor sit amet consectetur, adipisicing elit. Perferendis a molestias at porro
-                                veritatis repellendus minus cupiditate nam, fugit voluptas excepturi rerum ex mollitia
-                                assumenda! Aperiam sequi similique sunt molestias?</p>
-                        </div>
-                    </div>
-                    <div class="cardBox group">
-                        <div class="cardImg">
-                            <img src="./assets/Imgaes/group.png" alt="group"
-                                class="w-full transition duration-300 transform group-hover:scale-110">
-                        </div>
-                        <div class="cardText bg-green-950 group-hover:p-5">
-                            <h2 class="text-white text-center">Title</h2>
-                            <p class="text-white text-center group-hover:text-yellow-400 transition duration-300">Lorem
-                                ipsum dolor sit amet consectetur, adipisicing elit. Perferendis a molestias at porro
-                                veritatis repellendus minus cupiditate nam, fugit voluptas excepturi rerum ex mollitia
-                                assumenda! Aperiam sequi similique sunt molestias?</p>
-                        </div>
-                    </div>
-                    <div class="cardBox group">
-                        <div class="cardImg">
-                            <img src="./assets/Imgaes/png_11.png" alt="photo"
-                                class="w-full transition duration-300 transform group-hover:scale-110">
-                        </div>
-                        <div class="cardText bg-green-950 mt-10 group-hover:p-5">
-                            <h2 class="text-white text-center">Title</h2>
-                            <p class="text-white text-center group-hover:text-yellow-400 transition duration-300">Lorem
-                                ipsum dolor sit amet consectetur, adipisicing elit. Perferendis a molestias at porro
-                                veritatis repellendus minus cupiditate nam, fugit voluptas excepturi rerum ex mollitia
-                                assumenda! Aperiam sequi similique sunt molestias?</p>
-                        </div>
-                    </div>
-                    <div class="cardBox group">
-                        <div class="cardImg">
-                            <img src="./assets/Imgaes/group.png" alt="photo"
-                                class="w-full transition duration-300 transform group-hover:scale-110">
-                        </div>
-                        <div class="cardText bg-green-950 group-hover:p-5">
-                            <h2 class="text-white text-center">Title</h2>
-                            <p class="text-white text-center group-hover:text-yellow-400 transition duration-300">Lorem
-                                ipsum dolor sit amet consectetur, adipisicing elit. Perferendis a molestias at porro
-                                veritatis repellendus minus cupiditate nam, fugit voluptas excepturi rerum ex mollitia
-                                assumenda! Aperiam sequi similique sunt molestias?</p>
-                        </div>
-                    </div>
-                    <div class="cardBox group">
-                        <div class="cardImg">
-                            <img src="./assets/Imgaes/png_11.png" alt="photolast"
-                                class="w-full transition duration-300 transform group-hover:scale-110">
-                        </div>
-                        <div class="cardText bg-green-950 mt-10 group-hover:p-5">
-                            <h2 class="text-white text-center">Title</h2>
-                            <p class="text-white text-center group-hover:text-yellow-400 transition duration-300">Lorem
-                                ipsum dolor sit amet consectetur, adipisicing elit. Perferendis a molestias at porro
-                                veritatis repellendus minus cupiditate nam, fugit voluptas excepturi rerum ex mollitia
-                                assumenda! Aperiam sequi similique sunt molestias?</p>
-                        </div>
-                    </div>
+        <div class="container mt-20">
+            <h1 class="cmn">Card <span class="text-gray-400">Section</span></h1>
+        </div>
+        <div class=" grid-cols-1 sm:grid-cols-2 container grid xl:grid-cols-3 gap-5 mt-20 mb-15">
+            <div class="ItemBox group hover:scale-105 transition duration-300">
+                <div class="photo">
+                    <img src="./assets/Imgaes/background_img.jpg" alt="one">
+                </div>
+                <div class="text design">
+                    <h2 class="group-hover:my-5">Title</h2>
+                    <p class="group-hover:leading-5  group-hover:text-yellow-500 group-hover:pb-3">Lorem ipsum, dolor
+                        sit amet consectetur
+                        adipisicing elit. Officia, necessitatibus tempore vitae iusto ipsum labore nesciunt excepturi
+                        dolore rem ipsa dolor alias possimus nam doloremque neque similique saepe cumque et!</p>
                 </div>
             </div>
-    </main>
+            <div class="ItemBox group hover:scale-105 transition duration-300">
+                <div class="photo">
+                    <img src="./assets/Imgaes/background_img.jpg" alt="Two">
+                </div>
+                <div class="text design">
+                    <h2 class="group-hover:my-5">Title</h2>
+                    <p class="group-hover:leading-5 group-hover:text-yellow-500 group-hover:pb-3">Lorem ipsum dolor, sit
+                        amet consectetur
+                        adipisicing elit. Modi alias dignissimos et. Voluptates, reiciendis minima tenetur ratione,
+                        optio labore saepe molestiae incidunt hic dolores officia veritatis quia quam dolorem. Corporis!
+                    </p>
+                </div>
+            </div>
+            <div class="ItemBox group hover:scale-105 transition duration-300">
+                <div class="photo">
+                    <img src="./assets/Imgaes/background_img.jpg" alt="Three">
+                </div>
+                <div class="text design">
+                    <h2 class="group-hover:my-5">Title</h2>
+                    <p class="group-hover:leading-5 group-hover:text-yellow-500  group-hover:pb-3">Lorem ipsum dolor sit
+                        amet consectetur
+                        adipisicing elit. Impedit ullam tenetur a corrupti dolorum, deserunt distinctio illum
+                        consectetur, maiores fugiat, reprehenderit esse enim! Iure inventore minima autem qui culpa
+                        consequuntur.</p>
+                </div>
+            </div>
+            <div class="ItemBox group hover:scale-105 transition duration-300">
+                <div class="photo">
+                    <img src="./assets/Imgaes/background_img.jpg" alt="Four">
+                </div>
+                <div class="text design">
+                    <h2 class="group-hover:my-5">Title</h2>
+                    <p class="group-hover:leading-5  group-hover:text-yellow-500  group-hover:pb-3">Lorem ipsum dolor
+                        sit amet consectetur
+                        adipisicing elit. Voluptates eius veniam tempore quia quidem, voluptatibus et, nam id minima
+                        deleniti natus, omnis magni incidunt inventore vel laudantium! Quasi, repellendus deserunt.</p>
+                </div>
+            </div>
+            <div class="ItemBox group hover:scale-105 transition duration-300">
+                <div class="photo">
+                    <img src="./assets/Imgaes/background_img.jpg" alt="five">
+                </div>
+                <div class="text design">
+                    <h2 class="group-hover:my-5">Title</h2>
+                    <p class="group-hover:leading-5 group-hover:text-yellow-500 group-hover:pb-3">Lorem ipsum dolor sit
+                        amet consectetur
+                        adipisicing elit. Voluptates eius veniam tempore quia quidem, voluptatibus et, nam id minima
+                        deleniti natus, omnis magni incidunt inventore vel laudantium! Quasi, repellendus deserunt.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container my-20">
+            <h1 class="cmn">Number Card <span class="text-gray-400">Section</span></h1>
+        </div>
+        <div class=" grid-cols-1 container grid sm:grid-cols-2 gap-5 p-6 ">
+            <div class="numberCard bg-blue-600 group">
+                <h3 class="text-5xl text-white p-5 group-hover:headingHover ">Title</h3>
+                <p class="text-3xl text-white p-5 group-hover:leading-50 color">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Ad velit sapiente veritatis quos dolorem blanditiis eius pariatur obcaecati. Quia
+                    quisquam aut voluptas error optio quidem similique nihil officia architecto consequuntur?</p>
+            </div>
+            <div class="numberCard bg-blue-600 group">
+                <h3 class="text-5xl text-white p-5 group-hover:headingHover">Title</h3>
+                <p class="text-3xl text-white p-5 group-hover:leading-50 color">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Nemo ipsum id minus, esse, quis possimus adipisci autem voluptatum quasi
+                    laboriosam et iste ea quo corrupti voluptate minima consequuntur dolor vel!</p>
+            </div>
+            <div class="numberCard bg-blue-600 group">
+                <h3 class="text-5xl text-white p-5 group-hover:headingHover">Title</h3>
+                <p class="text-3xl text-white p-5 group-hover:leading-50  color">Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Molestiae exercitationem enim in quasi eligendi, veritatis voluptatem asperiores.
+                    Debitis accusamus molestias explicabo ex, ea exercitationem voluptate minima tempore! Maiores, ea
+                    ipsum.</p>
+            </div>
+            <div class="numberCard bg-blue-600  group">
+                <h3 class="text-5xl text-white p-5 group-hover:headingHover">Title</h3>
+                <p class="text-3xl text-white p-5 group-hover:leading-50  color">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Eum, quis placeat quaerat autem iure atque ut aspernatur veniam, tempora quibusdam
+                    blanditiis! Quidem iste sit quia officiis dolores ullam amet voluptatem!</p>
 
+            </div>
+        </div>
+        <div class="container my-10">
+            <h1 class="cmn">FAQ <span class="text-gray-400">Section</span></h1>
+        </div>
+        <div class="container grid-cols-1 gap-10">
+            <div class="datalists bg-yellow-500 ">
+                <dl>
+                    <dt class="  dataTitle bg-yellow-800 text-5xl text-white p-5">Title</dt>
+                    <dd class=" InerData  text-white p-10 text-3xl">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. A eum asperiores, ea id quas harum hic ex magni fugiat, facere ut neque minima nisi
+                        ratione molestias nam laudantium, nemo perspiciatis.</dd>
+                </dl>
+            </div>
+            <div class="datalists bg-yellow-500 my-5 ">
+                <dl>
+                    <dt class="  dataTitle bg-yellow-800 text-5xl text-white p-5">Title</dt>
+                    <dd class=" InerData hidden text-white p-10 text-3xl">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Officia ex at ab earum totam. Natus deleniti inventore amet fugit excepturi
+                        ullam temporibus praesentium, sit reprehenderit veritatis dolorem libero error magnam.</dd>
+                </dl>
+            </div>
+            <div class="datalists bg-yellow-500 ">
+                <dl>
+                    <dt class="  dataTitle bg-yellow-800 text-5xl text-white p-5">Title</dt>
+                    <dd class=" InerData hidden text-white p-10 text-3xl">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Ea quibusdam sapiente iusto ut temporibus quaerat, id dolorem optio impedit
+                        dolorum cumque eligendi fugiat ipsa vel, ad in dolore non veritatis!</dd>
+                </dl>
+            </div>
+            <div class="datalists bg-yellow-500 mt-5 ">
+                <dl>
+                    <dt class="  dataTitle bg-yellow-800 text-5xl text-white p-5">Title</dt>
+                    <dd class=" InerData hidden text-white p-10 text-3xl">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Numquam ratione suscipit qui, molestiae magnam esse vel. Veritatis sint
+                        voluptate dolore ducimus optio eos velit repellat possimus, perferendis quo excepturi animi.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <script>
+            // Get all the `dt` elements
+            const dataTitles = document.querySelectorAll('.dataTitle');
+
+            // Add a click event listener to each `dt`
+            dataTitles.forEach(title => {
+                title.addEventListener('click', function () {
+                    // Get the corresponding `dd` element (the next sibling of `dt`)
+                    const innerData = this.nextElementSibling;
+
+                    // Toggle the `hidden` class for the clicked `dd`
+                    innerData.classList.toggle('hidden');
+                });
+            });
+        </script>
+
+        </script>
+    </main>
     <footer></footer>
 </body>
 
